@@ -21,7 +21,7 @@ image_blue[:,:,1] = blue
 image_green = np.zeros_like(image)
 image_green[:,:,2] = green
 
-gray = 0.2 * red + 0.5 * green + 0.3 * blue
+gray = 0.299 * red + 0.587 * green + 0.114 * blue
 image_gray = np.zeros_like(image)
 image_gray[:,:,0] = gray
 image_gray[:,:,1] = gray
